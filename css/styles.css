@@ -175,10 +175,26 @@ footer {
   color: var(--primary-text-color);
 }
 .our-work .title:hover,
-/* .our-work .title:focus, */
+.our-work .title:focus,
 .our-work .link:hover,
 .our-work .link:focus {
   text-decoration: underline;
 
   color: var(--accent-color);
+}
+
+footer .logo:hover,
+footer .logo:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+address .text:hover,
+address.text:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+address .link:hover,
+address.link:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
