@@ -26,14 +26,27 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--title-text-color);
 }
 .logo > span {
   color: var(--accent-color);
 }
+.logo:focus,
+.logo:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 /* site nav */
+.list {
+  list-style: none;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
+
+  text-decoration: none;
 }
 
 .header .link {
@@ -43,6 +56,8 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -50,16 +65,21 @@ body {
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
+  text-decoration: underline;
 }
-.btn.primary:hover,
-.btn.primary:focus,
-.btn.secondary:hover,
-.btn.secondary:focus {
+
+.button.primary:hover,
+.button.primary:focus,
+.button.secondary:hover,
+.button.secondary:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+
+  text-decoration: underline;
 }
 
 /* main */
+
 .subject {
   background-color: #2f303a;
 }
@@ -81,15 +101,17 @@ body {
   background-color: var(--primary-bg-color);
   border: transparent;
 }
-.btn.primary {
+.button.primary {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+
   color: #ffffff;
   background-color: var(--accent-color);
 }
+
 /* portfolio btn */
 .btn.secondary {
   font-family: inherit;
@@ -100,9 +122,13 @@ body {
 }
 
 /* features */
+.features-list {
+  list-style: none;
+}
 
 .section-title {
   color: var(--title-text-color);
+
   text-align: center;
   font-weight: bold;
   font-size: 36px;
@@ -126,6 +152,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 /*  our-team*/
 
 .our-team .title {
@@ -149,6 +176,8 @@ footer {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+
+  text-decoration: none;
 }
 .address .link {
   font-size: 14px;
@@ -156,6 +185,8 @@ footer {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
 
 /*  our-work */
@@ -165,6 +196,7 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--title-text-color);
 }
 .our-work .link {
@@ -182,6 +214,8 @@ footer {
 
   color: var(--accent-color);
 }
+
+/* footer */
 
 footer .logo:hover,
 footer .logo:focus {
