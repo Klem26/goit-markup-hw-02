@@ -20,9 +20,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -32,10 +37,10 @@ body {
 .logo > span {
   color: var(--accent-color);
 }
+
 .logo:focus,
 .logo:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
+  color: var(--title-text-color);
 }
 
 /* site nav */
@@ -44,13 +49,23 @@ body {
 }
 
 .site-nav .link {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   color: var(--title-text-color);
 
   text-decoration: none;
 }
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 
 .header .link {
   font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -65,7 +80,6 @@ body {
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 .button.primary:hover,
@@ -74,8 +88,6 @@ body {
 .button.secondary:focus {
   color: #ffffff;
   background-color: var(--accent-color);
-
-  text-decoration: underline;
 }
 
 /* main */
@@ -85,6 +97,7 @@ body {
 }
 .subject-title {
   font-weight: 900;
+  font-style: normal;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
@@ -92,11 +105,14 @@ body {
   color: #ffffff;
 
   text-align: center;
+  text-transform: uppercase;
 }
 
 /*  btn */
 
 .button {
+  display: inline-block;
+  font-family: Roboto, sans-serif;
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
   border: transparent;
@@ -104,6 +120,7 @@ body {
 .button.primary {
   font-family: inherit;
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -113,12 +130,14 @@ body {
 }
 
 /* portfolio btn */
-.btn.secondary {
+.button .secondary {
   font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* features */
@@ -131,6 +150,7 @@ body {
 
   text-align: center;
   font-weight: bold;
+  font-style: normal;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -141,13 +161,16 @@ body {
 }
 
 .features-list .title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  font-style: normal;
   text-transform: uppercase;
 }
-.features-list > p {
+.features-list .desc {
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -160,29 +183,38 @@ body {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
-.our-team > p {
+
+.our-team .desc {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 /* footer */
 footer {
   background-color: #2f303a;
 }
+
+.footer {
+  color: #ffffff;
+}
+
 .address .text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-style: normal;
 
   color: #ffffff;
-
   text-decoration: none;
 }
 .address .link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-style: normal;
 
   color: rgba(255, 255, 255, 0.6);
 
@@ -192,7 +224,8 @@ footer {
 /*  our-work */
 
 .our-work .title {
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -200,35 +233,22 @@ footer {
   color: var(--title-text-color);
 }
 .our-work .link {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
 }
-.our-work .title:hover,
-.our-work .title:focus,
-.our-work .link:hover,
-.our-work .link:focus {
-  text-decoration: underline;
-
-  color: var(--accent-color);
-}
 
 /* footer */
 
-footer .logo:hover,
-footer .logo:focus {
-  color: var(--accent-color);
-  text-decoration: underline;
+.footer:hover,
+.footer:focus {
+  color: #ffffff;
 }
-address .text:hover,
-address.text:focus {
+
+.address .link:hover,
+.address .link:focus {
   color: var(--accent-color);
-  text-decoration: underline;
-}
-address .link:hover,
-address.link:focus {
-  color: var(--accent-color);
-  text-decoration: underline;
 }
